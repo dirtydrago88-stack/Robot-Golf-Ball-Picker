@@ -1,0 +1,19 @@
+#VRML_SIM R2023b utf8
+WorldInfo { basicTimeStep 16 }
+Viewpoint { orientation 0 1 0 0.6 position 0 25 45 }
+TexturedBackground { }
+TexturedBackgroundLight { }
+
+# Flat grass range ~80x120 m (adjust)
+RectangleArena {
+  translation 0 0 0
+  size 200 75
+  floorAppearance PBRAppearance { baseColor 0.25 0.5 0.25 roughness 1.0 metalness 0.0 }
+}
+
+# Our robot
+BallPickerRobot {
+  translation 0 0 0
+  rotation 0 1 0 0
+  name "ball_picker_1"
+}
